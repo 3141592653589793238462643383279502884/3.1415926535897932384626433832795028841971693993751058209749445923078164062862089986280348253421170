@@ -1,0 +1,58 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a135f354-7965-4455-80f5-b3015f8a7246</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>shoot_game.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>ShootingGame</Name>
+    <RootNamespace>ShootingGame</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="game.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="game_a.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="game_b.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="get_input.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="menu.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="shoot.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="scene.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="shoot_game.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
